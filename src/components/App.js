@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.scss';
-import { Navigation } from '.';
+import { Navigation, Header } from '.';
 
 const App = () => (
-    <main className="home-page">
+    <div className="home-page">
         <Navigation />
-    </main>
+        <main className="home-page__content">
+            <h1 className="visually-hidden">Football Application - Get actually information about soccer</h1>
+            <Header />
+        </main>
+    </div>
 )
 
 export default App;
