@@ -1,11 +1,8 @@
 import React from 'react';
-import { Spinner, withFootballService } from '.';
+import './App.scss';
 
-const App = ({ footballService }) => {
-    console.log('footballService: ', footballService);
-    return (
-        <Spinner />
-    )
-}
+const App = () => (
+    <h1>Hello World</h1>
+)
 
-export default withFootballService()(App);
+export default App;
