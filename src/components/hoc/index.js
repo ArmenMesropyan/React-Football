@@ -1,0 +1,1 @@
+export { default as withFootballService } from './withFootballService';
