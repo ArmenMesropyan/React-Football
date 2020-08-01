@@ -1,8 +1,13 @@
 import React from 'react';
-import { Spinner } from '.';
+import { Spinner, FootballService } from '.';
 
 const App = () => (
-    <Spinner />
+    <FootballService.Consumer>
+        {(FootballService) => {
+            console.log('FootballService: ', FootballService);
+            return <Spinner />
+        }}
+    </FootballService.Consumer>
 )
 
 export default App;
