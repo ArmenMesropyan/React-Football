@@ -1,7 +1,8 @@
 import React from 'react';
+import { Spinner } from '.';
 
-const App = ({ foo }) => (
-    <h1>Hello World! {foo.x.y}</h1>
+const App = () => (
+    <Spinner />
 )
 
 export default App;
