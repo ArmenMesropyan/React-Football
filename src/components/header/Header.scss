@@ -1,0 +1,46 @@
+.first {
+    &__elements {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__title {
+        font-size: 65px;
+        font-weight: 700;
+        margin-bottom: 45px;
+    }
+    &__element {
+        &--info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &__text {
+        margin-bottom: 45px;
+    }
+    &__btn {
+        border: none;
+        background: none;
+        max-width: 200px;
+        text-align: center;
+        color: #9cf801;
+        border: 1px solid #f8e401;
+        padding: 15px 0;
+        font-size: 20px;
+        font-weight: 700;
+        transform: skew(-15deg);
+        transition: 0.5s;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #f8e401;
+            border-color: #fff;
+            transition: 0.5s;
+            outline: none;
+        }
+    }
+    &__img {
+        max-width: 380px;
+    }
+}
