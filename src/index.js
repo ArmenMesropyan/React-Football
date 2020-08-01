@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
@@ -13,7 +15,9 @@ import { FootballAPIService } from './services';
 ReactDOM.render(
   <ErrorBoundry>
     <FootballService.Provider value={FootballAPIService}>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </FootballService.Provider>
   </ErrorBoundry>
 , document.getElementById('root'));
